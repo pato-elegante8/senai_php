@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e0f7fa;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #00796b;
+        }
+        p {
+            font-size: 18px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <h1>Parabéns!</h1>
+    <p>Você completou a inscrição com sucesso. Agradecemos sua participação!</p>
+    <a href="index.php" class="button">Voltar para a página inicial</a>
+</body>
+</html>
