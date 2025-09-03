@@ -1,0 +1,4 @@
+1- SELECT nome, tipo from salgados WHERE tipo = 'assado'
+
+2- INSERT INTO salgados (nome, tipo, valor,)
+VALUES ('mini churros','frito','2.2');
