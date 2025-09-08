@@ -1,4 +1,23 @@
 1- SELECT nome, tipo from salgados WHERE tipo = 'assado'
 
-2- INSERT INTO salgados (nome, tipo, valor,)
+2- INSERT INTO salgados (nome, tipo, valor)
 VALUES ('mini churros','frito','2.2');
+
+3- UPDATE clientes set endereco ='Av. Afonso Pena', numero ='1500' where nome = 'Carlos Pereira'
+
+4- select clientes.nome, pedidos.data_pedido from pedidos join clientes on pedidos.id_cliente = clientes.id WHERE data_entrega > '2025-08-00'
+
+5-select s.nome, sum(p.quantidade) as total_pedidos from salgados s join pedidos p on s.id = p.id_salgado group by s.nome order by total_pedidos;
+
+6- DELETE FROM `pedidos` WHERE quantidade < 50
+
+
+
+
+
+
+
+
+11- select count(*) from pedidos where data_pedido < '2025-08-01';
+
+12- SELECT * from clientes WHERE nome LIKE 'f%'
