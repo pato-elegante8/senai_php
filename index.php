@@ -1,56 +1,34 @@
-<?php
-    $nome = "sammuel";
-    $idade = 16;
-    echo "Meu nome é ".$nome.", e tenho ".$idade." anos.";
-    echo "<hr>";
-    echo "<center><h2>SENAI - DEVELOPER</h2></center>";
-    echo "<hr>";
-    $valor1 = 8;
-    $valor2 = 11;
-    echo "A soma dos valores foi:".$valor1+$valor2."<br>";
-    echo "A subtração dos valores foi:".$valor1-$valor2."<br>";
-    echo "A multiplicação dos valores foi:".$valor1*$valor2."<br>";
-    $result = $valor1/$valor2;
-    $numformatado = number_format($result, 2, ',', '.');
-    echo "A divisão dos valores foi:".$numformatado;
-    echo "<hr>";
-    $datahora = date('d/m/Y H:i:s');
-    echo "Data atual: ".$datahora;
-    echo "<hr>";
-    $data1 = new datetime('2025-01-01');
-    //data: 2025-01-01 = 22:30:23 Y-m-d H:1:s
-    $data2 = new datetime('2025-08-06');
-    $intervalo = $data1->diff($data2);
-    echo "a diferença em anos: ".$intervalo->y."<br>";
-    echo "a diferença em meses: ".$intervalo->m."<br>";
-    echo "a diferença em dias: ".$intervalo->days."<br>";
-    $horas = $intervalo->days*24;
-    echo "a diferença em horas: ".$horas;
-    echo "<hr>";
-    echo "<h2>função condicional - IF</h2>";
-    $a = 3;
-    $b = 5;
-    if ($a > $b) {
-        echo "A é maior que B!";
-    } else {
-        echo "B é maior que A";
-    }
-    echo "<br>saiu do IF";
-
-echo "<h2>Tabuada</h2>";
-$numtab = 5;
-for ($i=1; $i <= 10 ; $i++) {
-    echo $numtab." X " .$i." = ".$numtab*$i."<br>";
-}
-$a = 0;
-while($a < 100) {
-echo $a."<br>";
-$a+=10;
-}    
-echo "<hr>"
-echo "FOREACH";
-$cores = array("azul","marrom","bege","amarelo","branco");
-foreach ($cores as $cor) {
-   echo $cor."<br>"; 
-}
-?>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>SALGADOS DA MAMÃE</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h2>SALGADOS DA MAMÃE</h2>
+        <hr>
+        <br>
+        <br>
+        <div class="row justify-content-center row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sw">
+                    <div class="card-header py-3">
+                        <h3>LOGIN</h3>
+                    </div>
+                    <div class="card-body text-start">
+                        <form action="login.php" method="POST">
+                            <label class="form-label"><b>LOGIN</b></label>
+                            <input class="form-control" type="text" name="login" required/>
+                            <br>
+                            <label class="form-label"><b>SENHA</b></label>
+                            <input class="form-control" type="password" name="senha" required/>
+                            <br>
+                            <input type="submit" class="btn btn-outline-success" value="LOGIN">
+                        </form>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    <body>
