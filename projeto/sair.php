@@ -1,6 +1,6 @@
 <?php
-session_star ();
+session_start ();
 session_destroy ();
-echo "<script>window.location.reokace('index.php');</script";
+echo "<script>window.location.replace('index.php');</script>";
 exit();
 ?>

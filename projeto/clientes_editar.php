@@ -72,7 +72,6 @@
         <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
         </svg>&nbsp;CLIENTES</h2></center>
         <br>
-        <center><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 CADASTRAR NOVO CLIENTE
         </button></center>
         <br>
@@ -80,59 +79,10 @@
             <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sw">
                     <div class="card-header py-3">
-                        <h2>CLIENTES CADASTRADOS</h2>
+                        <h2>EDIÇÃO DE CLIENTES</h2>
                     </div>
                     <div class="card-body text-start">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">NOME</th>
-                                    <th scope="col">CELULAR</th>
-                                    <th scope="col">CIDADE</th>
-                                    <th scope="col">AÇÕES</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <?php
-                                        $pesquisa = mysqli_query($conn, "SELECT * FROM clientes ORDER BY nome");
-                                        $row = mysqli_num_rows($pesquisa);
-                                        if ($row > 0) {
-                                            while ($registro = $pesquisa -> fetch_array()) {
-                                                $id = $registro['id'];
-                                                $nome = $registro['nome'];
-                                                $celular = $registro['celular'];
-                                                $cidade = $registro['cidade'];
-                                                echo '<td>'.$nome.'</td>';
-                                                echo '<td>'.$celular.'</td>';
-                                                echo '<td>'.$cidade.'</td>';
-                                                echo '<td><a href="clientes_editar.php?id='.$id.'"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
-                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"/>
-                                                </svg></a> | <a href="clientes_excluir.php?id='.$id.'"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                                <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-                                                </svg></a></td>';
-                                                echo '</tr>';
-                                            }
-                                        } else {
-                                            echo "NÃO HÁ CLIENTES CADASTRADOS!";
-                                        }
-                                    ?>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>       
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">CADASTRO DE CLIENTES</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-        <div class="modal-body">
-        <form action="clientes_cadastro.php" method="POST">
+                    <form action="clientes_cadastro.php" method="POST">
             <div class="form-group">
             <label>NOME DO CLIENTE</label>
             <input type="text" class="form-control" name="nome" required>
@@ -156,12 +106,8 @@
             <button type="submit" class="btn btn-success">CADASTRAR</button>
             </div>                            
     </form>
+                    </div>
+                </div>       
+            </div>
         </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="fechar">Close</button>
-      </div>
-    </div>
-  </div>
 </div>
-</body>
-</html>
