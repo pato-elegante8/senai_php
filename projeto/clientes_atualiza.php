@@ -17,6 +17,6 @@
     $stmt->execute();
     $conn->close();
     echo "<script language='javascript' type='text/javascript'>
-    window.location.href='clientes.php'
+    window.location.href='clientes.php';
     </script>";
 ?>

@@ -68,12 +68,12 @@
             ?>
         </nav>
         <br>
-        <center><h2><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#00008B" class="bi bi-people-fill" viewBox="0 0 16 16">
+        <center><h2><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="gray" class="bi bi-people-fill" viewBox="0 0 16 16">
         <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
         </svg>&nbsp;CLIENTES</h2></center>
         <br>
         <center><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                CADASTRAR NOVO CLIENTE
+            CADASTRAR NOVO CLIENTE
         </button></center>
         <br>
         <div class="row justify-content-center row-cols-1 row-cols-md-2 mb-3 text-center">
@@ -106,10 +106,12 @@
                                                 echo '<td>'.$nome.'</td>';
                                                 echo '<td>'.$celular.'</td>';
                                                 echo '<td>'.$cidade.'</td>';
-                                                echo '<td><a href="clientes_editar.php?id='.$id.'"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
-                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"/>
-                                                </svg></a> | <a href="clientes_excluir.php?id='.$id.'"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                                <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                                                echo '<td><a href="clientes_editar.php?id='.$id.'"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                                </svg></a> | <a href="clientes_excluir.php?id='.$id.'"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="red" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
                                                 </svg></a></td>';
                                                 echo '</tr>';
                                             }
@@ -125,43 +127,45 @@
         </div>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">CADASTRO DE CLIENTES</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-        <div class="modal-body">
-        <form action="clientes_cadastro.php" method="POST">
-            <div class="form-group">
-            <label>NOME DO CLIENTE</label>
-            <input type="text" class="form-control" name="nome" required>
-            <label>CELULAR</label>
-            <input type="number" class="form-control" name="celular" required>
-            <label>ENDEREÇO</label>
-            <input type="text" class="form-control" name="endereco" required>
-            <br>
-            <label>NÚMERO</label>
-            <input type="number" class="form-control" name="numero" required>
-            <br>
-            <label>COMPLEMENTO</label>
-            <input type="text" class="form-control" name="complemento" required>
-            <br>
-            <label>CIDADE</label>
-            <input type="text" class="form-control" name="cidade" required>
-            <br>
-            <label>CPF</label>
-            <input type="number" class="form-control" name="cpf" required>
-            <br>
-            <button type="submit" class="btn btn-success">CADASTRAR</button>
-            </div>                            
-    </form>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">CADASTRO DE CLIENTE</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="clientes_cadastro.php" method="POST">
+                            <div class="form-group">
+                                <label>NOME DO CLIENTE</label>
+                                <input type="text" class="form-control" name="nome" required>
+                                <br>
+                                <label>CELULAR</label>
+                                <input type="number" class="form-control" name="celular" required>
+                                <br>
+                                <label>ENDEREÇO</label>
+                                <input type="text" class="form-control" name="endereco" required>
+                                <br>
+                                <label>NÚMERO</label>
+                                <input type="number" class="form-control" name="numero" required>
+                                <br>
+                                <label>COMPLEMENTO</label>
+                                <input type="text" class="form-control" name="complemento" required>
+                                <br>
+                                <label>CIDADE</label>
+                                <input type="text" class="form-control" name="cidade" required>
+                                <br>
+                                <label>CPF</label>
+                                <input type="number" class="form-control" name="cpf" required>
+                                <br>
+                                <button type="submit" class="btn btn-success">CADASTRAR</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">FECHAR</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="fechar">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
+    </body>
 </html>

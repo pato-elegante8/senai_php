@@ -3,10 +3,10 @@
     $nome = $_POST['nome'];
     $tipo = $_POST['tipo'];
     $valor = $_POST['valor'];
-    $query = $conn->query("SELECT * FROM salgados WHERE nome='$nome' AND tipo='$tipo'");
+    $query = $conn->query("SELECT * FROM salgados WHERE nome='$nome'");
     if (mysqli_num_rows($query) > 0) {
         echo "<script language='javascript' type='text/javascript'>
-        alert('salgado já existe em nossa base de dados!');
+        alert('Salgado já existe em nossa base de dados!');
         window.location.href='salgados.php';</script>";
         exit();
     } else {
