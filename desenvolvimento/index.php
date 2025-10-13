@@ -53,8 +53,11 @@ img {
 <img src="Captura de tela 2025-10-13 084403.png" alt="Imagem no topo">
 
 <!-- Botão central -->
+
+
 <div class="caixa">
-    <button type="button" class="btn btn-outline-primary custom-btn">LOGIN</button>
+<a href="pagina_login.php">
+    <button type="button" class="btn btn-outline-primary custom-btn">ENTRAR</button>
 </div>
 
 <!-- Barra no rodapé -->

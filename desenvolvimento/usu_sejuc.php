@@ -144,10 +144,11 @@
                                 <label>CPF</label>
                                 <input type="text" class="form-control" name="cpf" required>
                                 <br>
+                                <div class="modal-footer">
                                 <button type="submit" class="btn btn-success">CADASTRAR</button>
-                            </div>
+                          
                         </form>
-                    </div>
+                
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">FECHAR</button>
                     </div>
